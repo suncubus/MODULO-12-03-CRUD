@@ -21,7 +21,7 @@ export class AdduserComponent implements OnInit {
   get f() {
      return this.registerForm.controls; 
   }
-
+  
   //Envio del form
   onSubmit() {
     

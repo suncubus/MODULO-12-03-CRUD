@@ -18,10 +18,24 @@ export class CrudService {
 
   //añadir usuario nuevo    
   public adduser(userData:any){
+    
       return this.http.post('http://localhost/users.php/', userData)
         .subscribe(
           (res: Response) => {
               this.getusers();
         });
       }
+      
+  //eliminar usuario
+  public deleteuser(userid){
+      return this.http.post('http://localhost/users.php/', userid)
+      .subscribe(
+        (res: Response) => {
+
+        });
+  }
+
+  //modificar usuario
+  public edituser(userid){
+  }
 }
