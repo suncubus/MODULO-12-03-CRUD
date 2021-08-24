@@ -8,3 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angularcrud';
 }
+
+
+/*
+
+TUTORIAL: https://therichpost.com/
+
+*/

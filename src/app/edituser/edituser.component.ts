@@ -43,7 +43,7 @@ export class EdituserComponent implements OnInit {
       /*const text = this.renderer.createText(this.user.username);
       this.renderer.appendChild(this.editUser.nativeElement, text);*/
       
-    }, 100);
+    }, 1000);
 }
 
     //Editar usuario
