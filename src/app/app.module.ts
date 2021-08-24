@@ -10,12 +10,14 @@ import { AdduserComponent } from './adduser/adduser.component';
 import { ReactiveFormsModule } from '@angular/forms';
 // Módulo con el que hacer llamadas API RESt y obtener resultados de la propia api
 import { HttpClientModule } from '@angular/common/http';
+import { EdituserComponent } from './edituser/edituser.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
-    AdduserComponent
+    AdduserComponent,
+    EdituserComponent
   ],
   imports: [
     BrowserModule,

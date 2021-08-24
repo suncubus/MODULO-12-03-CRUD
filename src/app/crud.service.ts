@@ -8,6 +8,7 @@ export class CrudService {
 
   //variable para los campos del formulario añadir
   userData:any;
+  singleuserdata:any;
 
   constructor(private http:HttpClient) { }
 
@@ -29,13 +30,27 @@ export class CrudService {
   //eliminar usuario
   public deleteuser(userid){
       return this.http.post('http://localhost/users.php/', userid)
-      .subscribe(
-        (res: Response) => {
+      .subscribe((res: Response) => {
+
+      });
+  }
+
+  //Ver usuario
+  public getsingleuser(userid)
+  {
+    return this.http.post('http://localhost/users.php/', userid)
+    .subscribe((res: Response) => {
+      this.singleuserdata = res[0];   
+     
+      
+    });
+  }
+  //Modificar
+  public updateuser(userid){
+      return this.http.post('http://localhost/users.php/', userid)
+        .subscribe((res: Response) => {
 
         });
   }
 
-  //modificar usuario
-  public edituser(userid){
-  }
 }

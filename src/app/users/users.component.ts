@@ -45,14 +45,8 @@ export class UsersComponent implements OnInit {
       this.loaddata();
     }
   }
+
   
-    //modificar usuario
-    edituser(id){
-
-    }
-  
-
-
   ngOnInit(): void {
    
   }

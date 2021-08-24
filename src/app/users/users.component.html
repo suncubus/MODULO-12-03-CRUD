@@ -18,8 +18,8 @@
                 <td>{{group.email}}</td>
                 <td>{{group.username}}</td>
                 <td>
-                  <button class="btn btn-danger" (click)="deleteuser(group.id)">Delete</button>
-                  <button class="btn btn-warning" (click)="edituser(group.id)">Modify</button>
+                  <button class="btn btn-danger" (click)="deleteuser(group.id)">Delete</button>   
+                  <button class="btn btn-primary" [routerLink]="['/edituser/{{group.id}}']">Edit</button>               
                 </td>
               </tr>      
         </tbody>
